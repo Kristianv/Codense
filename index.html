@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codense - Dynamics 365 Development & Consulting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bg-pattern"></div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <img src="images/Logo.svg" alt="Codense Logo" class="logo-icon">
+            </a>
+            <ul class="nav-links">
+                <li><a href="#services">Diensten</a></li>
+                <li><a href="#expertise">Expertise</a></li>
+                <li><a href="#abonnementen">Abonnementen</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="dots-canvas" class="dots-canvas"></canvas>
+        <div class="hero-glow"></div>
+        <div class="hero-content">
+            <h1>
+                Dynamics 365<br>
+                <span class="highlight">Development & Consulting</span>
+            </h1>
+            <p class="hero-subtitle">
+                Specialist in Microsoft Dynamics 365 en Power Platform.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Plan een Gesprek</a>
+                <a href="#expertise" class="btn btn-secondary">Bekijk onze Expertise</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Diensten</h2>
+                <p class="section-description">
+                    Van strategisch advies tot technische implementatie en doorlopende support - wij bieden alles wat u nodig heeft voor een succesvolle Microsoft-omgeving.
+                </p>
+            </div>
+
+            <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <circle cx="12" cy="12" r="6"></circle>
+                        <circle cx="12" cy="12" r="2"></circle>
+                    </svg>
+                </div>
+                <h3>Strategisch Advies</h3>
+                <p>
+                    Wij helpen u de juiste keuzes te maken voor uw organisatie en vertalen uw bedrijfsdoelen naar concrete technische oplossingen.
+                </p>
+                <ul class="service-features">
+                    <li>Business proces analyse</li>
+                    <li>Architectuur</li>
+                    <li>Licentie & kostenoptimalisatie</li>
+                    <li>AI & Copilot integratie</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                        <line x1="8" y1="21" x2="16" y2="21"></line>
+                        <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                </div>
+                <h3>Maatwerk Development</h3>
+                <p>
+                    Van custom apps tot complexe integraties - wij bouwen oplossingen die perfect aansluiten bij uw unieke processen en systemen.
+                </p>
+                <ul class="service-features">
+                    <li>Power Apps development</li>
+                    <li>Power Automate flows</li>
+                    <li>Custom plugins & workflows</li>
+                    <li>API integraties</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+                    </svg>
+                </div>
+                <h3>Support & Onderhoud</h3>
+                <p>
+                    Continue beschikbaarheid en snelle oplossingen. Wij zorgen dat uw systemen altijd optimaal blijven functioneren.
+                </p>
+                <ul class="service-features">
+                    <li>Bugfixes & troubleshooting</li>
+                    <li>Performance optimalisatie</li>
+                    <li>Gebruikersondersteuning</li>
+                    <li>Preventief onderhoud</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Microsoft Products Section -->
+    <section id="expertise">
+        <div class="section-container">
+            <div class="section-header">
+            <h2 class="section-title">Onze Expertise</h2>
+            <p class="section-description">
+                Jarenlange ervaring met Dynamics 365 Sales, Customer Service en Field Service. Aangevuld met diepgaande kennis van Power Apps, Dataverse en Azure voor complete oplossingen.
+            </p>
+        </div>
+
+        <div class="products-grid">
+            <div class="product-card">
+                <h3>
+                    <img src="images/Sales_scalable.svg" alt="Dynamics 365 Sales" class="product-icon">
+                    Dynamics 365 Sales
+                </h3>
+                <p>
+                    Implementatie en customisatie van het complete sales platform,
+                    van lead tot opportunity management.
+                </p>
+            </div>
+
+            <div class="product-card">
+                <h3>
+                    <img src="images/CustomerServices_scalable.svg" alt="Dynamics 365 Customer Service" class="product-icon">
+                    Dynamics 365 Customer Service
+                </h3>
+                <p>
+                    Case management, knowledge base, en omnichannel support
+                    voor optimale klantenservice.
+                </p>
+            </div>
+
+            <div class="product-card">
+                <h3>
+                    <img src="images/FieldService_scalable.svg" alt="Dynamics 365 Field Service" class="product-icon">
+                    Dynamics 365 Field Service
+                </h3>
+                <p>
+                    Planning, dispatch en mobiele oplossingen voor
+                    field service operaties en asset management.
+                </p>
+            </div>
+
+            <div class="product-card">
+                <h3>
+                    <img src="images/PowerApps_scalable.svg" alt="Power Apps" class="product-icon">
+                    Power Apps
+                </h3>
+                <p>
+                    Canvas en Model-driven apps voor mobiele en desktop toepassingen.
+                    Custom PCF controls voor unieke functionaliteit.
+                </p>
+            </div>
+
+            <div class="product-card">
+                <h3>
+                    <img src="images/Dataverse_scalable.svg" alt="Dataverse" class="product-icon">
+                    Dataverse
+                </h3>
+                <p>
+                    De krachtige database achter Dynamics 365 met enterprise-grade
+                    security, relaties en business logic.
+                </p>
+            </div>
+
+            <div class="product-card">
+                <h3>
+                    <img src="images/Microsoft_Azure.svg" alt="Microsoft Azure" class="product-icon">
+                    Azure
+                </h3>
+                <p>
+                    Cloud infrastructure en services voor hosting, integratie,
+                    data processing en schaalbare oplossingen.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <section class="process-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Hoe We Werken</h2>
+                <p class="section-description">
+                    Van eerste gesprek tot succesvolle implementatie en doorlopende support - ons bewezen proces zorgt voor resultaat.
+                </p>
+            </div>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <div class="process-content">
+                        <h3>Kennismaking & Analyse</h3>
+                        <p>We starten met een gratis consultatiegesprek om uw uitdagingen en doelen te begrijpen. We analyseren uw huidige situatie en identificeren verbeterkansen.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <div class="process-content">
+                        <h3>Implementatie</h3>
+                        <p>Onze experts realiseren de oplossing volgens planning. We werken Agile met regelmatige demo's zodat u altijd betrokken bent bij de voortgang.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <div class="process-content">
+                        <h3>Training & Overdracht</h3>
+                        <p>We trainen uw team zodat iedereen de nieuwe oplossing optimaal kan gebruiken. Alle documentatie en kennis wordt zorgvuldig overgedragen.</p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <div class="process-content">
+                        <h3>Support & Optimalisatie</h3>
+                        <p>Na go-live blijven we beschikbaar voor support en doorontwikkeling. We monitoren proactief en optimaliseren continu voor het beste resultaat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section id="abonnementen">
+        <div class="section-container">
+            <div class="section-header">
+            <h2 class="section-title">Abonnementen</h2>
+            <p class="section-description">
+                Gegarandeerde uren per maand voor continue ondersteuning en doorontwikkeling
+            </p>
+        </div>
+
+        <div class="plans-grid">
+            <div class="plan-card">
+                <div class="plan-hours">8</div>
+                <div class="plan-name">Starter</div>
+                <p class="plan-description">
+                    Perfect voor kleine aanpassingen en onderhoud
+                </p>
+                <a href="#contact" class="btn btn-secondary">Neem Contact Op</a>
+            </div>
+
+            <div class="plan-card featured">
+                <div class="plan-badge">POPULAIR</div>
+                <div class="plan-hours">16</div>
+                <div class="plan-name">Professional</div>
+                <p class="plan-description">
+                    Ideaal voor continue doorontwikkeling en support
+                </p>
+                <a href="#contact" class="btn btn-primary">Neem Contact Op</a>
+            </div>
+
+            <div class="plan-card">
+                <div class="plan-hours">32</div>
+                <div class="plan-name">Enterprise</div>
+                <p class="plan-description">
+                    Voor organisaties met uitgebreide behoeften
+                </p>
+                <a href="#contact" class="btn btn-secondary">Neem Contact Op</a>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Vertrouwd Door</h2>
+                <p class="section-description">
+                    Organisaties die wij hebben geholpen met Microsoft Dynamics 365 oplossingen
+                </p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel-track">
+                    <div class="client-logo">
+                        <a href="https://www.allego.eu/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/Allego_logo.svg.png" alt="Allego">
+                        </a>
+                    </div>
+                    <div class="client-logo">
+                        <a href="http://www.unive.nl/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/Univé_logo.svg.png" alt="Univé">
+                        </a>
+                    </div>
+                    <div class="client-logo">
+                        <a href="http://www.indito.nl/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/logo-indito.png" alt="Indito">
+                        </a>
+                    </div>
+                    <!-- Duplicate for infinite scroll -->
+                    <div class="client-logo">
+                        <a href="https://www.allego.eu/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/Allego_logo.svg.png" alt="Allego">
+                        </a>
+                    </div>
+                    <div class="client-logo">
+                        <a href="http://www.unive.nl/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/Univé_logo.svg.png" alt="Univé">
+                        </a>
+                    </div>
+                    <div class="client-logo">
+                        <a href="http://www.indito.nl/" target="_blank" rel="noopener noreferrer">
+                            <img src="images/logos/logo-indito.png" alt="Indito">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="section-container">
+            <div class="section-header">
+            <h2 class="section-title">FAQ</h2>
+            <p class="section-description">
+                Antwoorden op de meest gestelde vragen
+            </p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Wat is het verschil tussen de drie diensten?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        <strong>Strategisch Advies</strong> omvat business proces analyse, architectuur, licentie & kostenoptimalisatie, en AI & Copilot integratie.
+                        <strong>Maatwerk Development</strong> richt zich op Power Apps development, Power Automate flows, custom plugins & workflows, en API integraties.
+                        <strong>Support & Onderhoud</strong> biedt bugfixes & troubleshooting, performance optimalisatie, gebruikersondersteuning en preventief onderhoud.
+                        Deze diensten kunnen apart of gecombineerd worden ingezet afhankelijk van uw behoeften.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Wat zijn de voordelen van een abonnement?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Met een abonnement heeft u gegarandeerde uren per maand voor continue ondersteuning en doorontwikkeling.
+                        U krijgt voorspelbare kosten en flexibele inzet op zowel ad-hoc issues als geplande doorontwikkeling.
+                        We bieden drie pakketten: <strong>Starter (8 uur)</strong>, <strong>Professional (16 uur)</strong> en <strong>Enterprise (32 uur)</strong> per maand.
+                        Ideaal voor organisaties die regelmatig ondersteuning of doorontwikkeling nodig hebben.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Met welke Microsoft technologieën werken jullie?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Wij zijn gespecialiseerd in <strong>Dynamics 365 Sales, Customer Service en Field Service</strong>.
+                        Daarnaast hebben we diepgaande kennis van <strong>Power Apps, Dataverse en Azure</strong> voor complete oplossingen.
+                        Voor elk van deze producten kunnen we implementaties, maatwerk ontwikkeling en ondersteuning leveren.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Hoe verloopt een samenwerking?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We starten met een <strong>gratis consultatiegesprek</strong> om uw uitdagingen en doelen te begrijpen en uw huidige situatie te analyseren.
+                        Daarna volgt de <strong>implementatie</strong> volgens planning, waarbij we Agile werken met regelmatige demo's.
+                        We verzorgen uitgebreide <strong>training & overdracht</strong> zodat uw team de oplossing optimaal kan gebruiken.
+                        Na go-live blijven we beschikbaar voor <strong>support & optimalisatie</strong> en continu verbeteren.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Werken jullie remote of on-site?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        We werken voornamelijk <strong>remote</strong>, wat kostenefficiënt is en flexibiliteit biedt.
+                        Voor kick-offs, workshops of belangrijke sessies is <strong>on-site aanwezigheid</strong> mogelijk.
+                        De werkwijze stemmen we af op uw specifieke wensen en de projectfase.
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Helpen jullie ook met AI en Copilot?</span>
+                    <span class="faq-toggle">+</span>
+                </div>
+                <div class="faq-answer">
+                    <div class="faq-answer-content">
+                        Ja, <strong>AI & Copilot integratie</strong> is onderdeel van ons strategisch advies.
+                        We helpen organisaties om Microsoft Copilot en AI-functies optimaal te benutten binnen Dynamics 365 en Power Platform.
+                        Dit omvat advies over implementatie, configuratie en het maximaliseren van de toegevoegde waarde van AI in uw processen.
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-container">
+            <div class="section-header">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-description">
+                Ontdek de mogelijkheden voor samenwerking
+            </p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Adres</h3>
+                        <p>Prins Willem-Alexanderlaan 301<br>7311 SW Apeldoorn<br>Nederland</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email</h3>
+                        <p><a href="mailto:kristian@codense.nl">kristian@codense.nl</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Telefoon</h3>
+                        <p><a href="tel:+31634277607">+31 6 34 27 76 07</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg>
+                    </div>
+                    <div class="contact-details">
+                        <h3>LinkedIn</h3>
+                        <p>Verbind op <a href="https://www.linkedin.com/in/kristian-valk/" target="_blank">LinkedIn</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <!-- Web3Forms Access Key -->
+                    <input type="hidden" name="access_key" value="0ab3dfeb-2bb9-4263-8bf1-e5e5bdf365c0">
+
+                    <!-- Custom subject line -->
+                    <input type="hidden" name="subject" value="Nieuw contactformulier bericht van Codense website">
+
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder=" " required>
+                        <label for="name">Naam *</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder=" " required>
+                        <label for="email">Email *</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" id="phone" name="phone" placeholder=" ">
+                        <label for="phone">Telefoon</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="company" name="company" placeholder=" ">
+                        <label for="company">Bedrijf</label>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder=" " required></textarea>
+                        <label for="message">Bericht *</label>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary form-submit">
+                        <span>Verstuur Bericht</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="form-success" class="form-message form-success" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                        <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                    </svg>
+                    <h3>Bedankt voor je bericht!</h3>
+                    <p>We hebben je bericht ontvangen en nemen zo snel mogelijk contact met je op.</p>
+                </div>
+
+                <!-- Error Message -->
+                <div id="form-error" class="form-message form-error" style="display: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="15" y1="9" x2="9" y2="15"></line>
+                        <line x1="9" y1="9" x2="15" y2="15"></line>
+                    </svg>
+                    <h3>Er ging iets mis</h3>
+                    <p>Het bericht kon niet worden verzonden. Probeer het later opnieuw of neem direct contact met ons op.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about">
+                <h3>Codense B.V.</h3>
+                <p>
+                    Gespecialiseerd in Microsoft Dynamics 365 en Power Platform development.
+                    Strategisch advies, maatwerk development, en continue ondersteuning voor organisaties.
+                </p>
+                <p style="color: var(--text-muted); font-size: 0.9rem;">
+                    KvK: 93645635<br>
+                    BTW: NL866479041B01
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Diensten</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Strategisch Advies</a></li>
+                    <li><a href="#services">Maatwerk Development</a></li>
+                    <li><a href="#services">Support & Onderhoud</a></li>
+                    <li><a href="#abonnementen">Abonnementen</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#expertise">Expertise</a></li>
+                    <li><a href="#clients">Vertrouwd Door</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Codense B.V. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
