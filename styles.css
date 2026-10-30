@@ -800,7 +800,8 @@ section:nth-of-type(even) {
 }
 
 .carousel-container {
-    margin-top: 3rem;
+    margin-top: 2rem;
+    padding: 1rem 0;
     overflow: hidden;
     position: relative;
     width: 100%;
