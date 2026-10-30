@@ -274,7 +274,7 @@ nav {
 }
 
 .hero-portrait {
-    margin: 0;
+    margin: 0 0 2.5rem;
     position: relative;
 }
 
@@ -306,7 +306,20 @@ nav {
 }
 
 .hero-portrait figcaption {
-    padding: 1rem 0.25rem 0;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    bottom: -2rem;
+    width: max-content;
+    max-width: 90%;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid var(--border-light);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transform: translateX(-50%);
+    backdrop-filter: blur(8px);
 }
 
 .hero-portrait figcaption strong {
@@ -318,7 +331,8 @@ nav {
     display: block;
     color: var(--text-muted);
     font-size: 0.78rem;
-    margin-top: 0.2rem;
+    margin-top: 0.15rem;
+    white-space: nowrap;
 }
 
 .btn {
