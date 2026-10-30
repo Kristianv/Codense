@@ -34,6 +34,34 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+// Mobile navigation
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+function closeMobileMenu() {
+    navLinks.classList.remove('open');
+    menuToggle.setAttribute('aria-expanded', 'false');
+    menuToggle.setAttribute('aria-label', 'Menu openen');
+}
+
+menuToggle.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+    menuToggle.setAttribute('aria-label', isOpen ? 'Menu sluiten' : 'Menu openen');
+});
+
+navLinks.addEventListener('click', event => {
+    if (event.target.closest('a')) closeMobileMenu();
+});
+
+document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMobileMenu();
+});
+
+window.addEventListener('resize', () => {
+    if (window.innerWidth > 768) closeMobileMenu();
+});
+
 // Add animation on scroll
 const observerOptions = {
     threshold: 0.1,
