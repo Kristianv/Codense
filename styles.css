@@ -216,19 +216,12 @@ nav {
     overflow-wrap: anywhere;
 }
 
-.hero-eyebrow,
 .section-kicker {
     color: var(--primary-orange);
     font-size: 0.82rem;
     font-weight: 700;
     letter-spacing: 0.14em;
     text-transform: uppercase;
-}
-
-.hero-eyebrow {
-    color: var(--text-primary);
-    font-size: 0.95rem;
-    margin-bottom: 1.25rem;
 }
 
 .hero h1 .highlight {
@@ -1438,11 +1431,6 @@ footer {
     .hero-content {
         flex: 1 1 auto;
         max-width: 100%;
-    }
-
-    .hero-eyebrow {
-        max-width: none;
-        line-height: 1.6;
     }
 
     section {
