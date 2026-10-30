@@ -241,24 +241,14 @@ form.addEventListener('submit', async function(e) {
     buttonText.textContent = 'Verzenden...';
 
     try {
-        // Create FormData object from form
         const formData = new FormData(form);
 
-        // Debug: log what we're sending
-        console.log('Sending form data:');
-        for (let [key, value] of formData.entries()) {
-            console.log(`${key}: ${value}`);
-        }
-
-        // Send form data using fetch
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
             body: formData
         });
 
         const data = await response.json();
-        console.log('Response from Web3Forms:', data);
-
         if (response.ok && data.success) {
             // Show success message
             form.style.display = 'none';
