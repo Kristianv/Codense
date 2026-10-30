@@ -309,31 +309,6 @@ nav {
     object-position: 51% center;
 }
 
-.portrait-status {
-    position: absolute;
-    left: 1.25rem;
-    bottom: 1.25rem;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.55rem;
-    padding: 0.7rem 0.9rem;
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.92);
-    color: var(--text-primary);
-    font-size: 0.75rem;
-    font-weight: 700;
-    box-shadow: var(--shadow-md);
-    backdrop-filter: blur(8px);
-}
-
-.portrait-status i {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #22a06b;
-    box-shadow: 0 0 0 4px rgba(34, 160, 107, 0.14);
-}
-
 .hero-portrait figcaption {
     padding: 1rem 0.25rem 0;
 }
