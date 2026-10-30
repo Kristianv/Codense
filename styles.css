@@ -415,7 +415,7 @@ section:nth-of-type(even) {
 }
 
 .about-content h2 {
-    font-size: clamp(2rem, 4vw, 3.4rem);
+    font-size: clamp(1.9rem, 3.3vw, 3rem);
     line-height: 1.15;
     letter-spacing: -0.04em;
     margin-bottom: 1.75rem;
@@ -423,7 +423,7 @@ section:nth-of-type(even) {
 
 .about-portrait {
     margin: 0;
-    max-width: 460px;
+    max-width: 400px;
     justify-self: center;
 }
 
