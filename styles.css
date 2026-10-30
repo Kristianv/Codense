@@ -410,22 +410,6 @@ section:nth-of-type(even) {
     object-position: 51% center;
 }
 
-.about-portrait figcaption {
-    padding-top: 1.2rem;
-    text-align: center;
-}
-
-.about-portrait figcaption strong,
-.about-portrait figcaption span {
-    display: block;
-}
-
-.about-portrait figcaption span {
-    margin-top: 0.25rem;
-    color: rgba(255, 255, 255, 0.62);
-    font-size: 0.82rem;
-}
-
 .about-copy > p {
     color: rgba(255, 255, 255, 0.72);
     font-size: 1.08rem;
