@@ -701,27 +701,6 @@ section:nth-of-type(even) {
     font-weight: 700;
 }
 
-.collaboration-cta {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 3rem;
-    padding: 2rem 2.5rem;
-    background: var(--text-primary);
-    color: white;
-    border-radius: 16px;
-}
-
-.collaboration-cta p {
-    max-width: 680px;
-    color: rgba(255, 255, 255, 0.78);
-}
-
-.collaboration-cta .btn {
-    flex-shrink: 0;
-}
-
 /* Tech Stack */
 .tech-grid {
     display: grid;
@@ -1336,11 +1315,6 @@ footer {
         gap: 0.4rem;
     }
 
-    .collaboration-cta {
-        align-items: stretch;
-        flex-direction: column;
-        padding: 1.75rem;
-    }
 }
 
 @media (prefers-reduced-motion: reduce) {
